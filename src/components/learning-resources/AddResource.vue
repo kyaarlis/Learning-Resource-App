@@ -1,5 +1,4 @@
 <template>
-    <teleport to="body">
             <base-dialog v-if="inputIsInvalid" title="Invalid Input!" @close="confirmError">
                <template #default>
                 <p>At least one input field is invalid..</p>
@@ -9,7 +8,6 @@
                 <base-button @click="confirmError">Okay</base-button>
             </template>
         </base-dialog>
-    </teleport>
     <base-card>
     <form @submit.prevent="submitForm">
         <div>
